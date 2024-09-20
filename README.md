@@ -65,10 +65,7 @@ This project focuses on building a deep learning model to classify movie reviews
 Dataset
 The dataset used is the IMDB Dataset of 50K Movie Reviews, available on Kaggle. This dataset contains 50,000 movie reviews, each labeled as either positive or negative.
 
-Download the dataset:
-
-bash
-Copy code
+##Download the dataset:
 !kaggle datasets download -d lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 Project Workflow
 Data Preprocessing:
@@ -100,37 +97,26 @@ Seaborn
 Gradio
 Kaggle API (to download the dataset)
 Instructions
-Clone the repository:
 
-bash
-Copy code
+## Clone the repository:
 git clone https://github.com/yourusername/movie-review-sentiment-analysis.git
 cd movie-review-sentiment-analysis
-Install dependencies:
 
-bash
-Copy code
+## Install dependencies:
 pip install -r requirements.txt
-Download and unzip the dataset:
 
-bash
-Copy code
+## Download and unzip the dataset:
 !kaggle datasets download -d lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 !unzip imdb-dataset-of-50k-movie-reviews.zip
 Run the training script: The model can be trained using the script provided. After training, it will save the model as sentiment_model.h5.
-
-bash
-Copy code
 python train_model.py
-Run the Gradio app: Launch the Gradio interface to test the model:
 
-bash
-Copy code
+## Run the Gradio app: Launch the Gradio interface to test the model:
 python app.py
 Usage
 Enter a movie review in the input textbox and click the Analyze button. The model will predict whether the review is positive or negative and display the confidence score.
 
-Example:
+## Example:
 
 Input: I absolutely loved this movie. It was fantastic!
 Output: The review is positive with 98.74% confidence.
@@ -141,15 +127,16 @@ Dense Output Layer: Produces a binary output, indicating whether the sentiment i
 Results
 The model achieves around 87% accuracy on the test set, which is quite effective for binary sentiment classification tasks.
 
-Evaluation Metrics:
+## Evaluation Metrics:
 Accuracy: Measures how well the model predicts the correct sentiment.
 Loss: Tracks the error during training and testing.
 Gradio Interface
 
 The Gradio interface allows real-time predictions for movie reviews. Just input the text, and get the sentiment prediction.
 
-Future Work
+## Future Work
 Improving the accuracy by tuning hyperparameters or using more advanced techniques like Bidirectional LSTMs or transformer-based models like BERT.
 Expanding the dataset to include more diverse reviews.
-Conclusion
+
+## Conclusion
 This project demonstrates a simple yet effective approach to movie review sentiment analysis using deep learning. The deployment through Gradio makes it user-friendly, allowing non-technical users to interact with the model easily.
