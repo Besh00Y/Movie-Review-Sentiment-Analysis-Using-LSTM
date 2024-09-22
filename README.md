@@ -98,10 +98,6 @@ Gradio
 Kaggle API (to download the dataset)
 Instructions
 
-## Clone the repository:
-git clone https://github.com/yourusername/movie-review-sentiment-analysis.git
-cd movie-review-sentiment-analysis
-
 ## Install dependencies:
 pip install -r requirements.txt
 
